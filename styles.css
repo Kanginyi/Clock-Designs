@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: black;
+}
+
+.clock-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    background: pink;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 14px solid rgb(255, 164, 180);
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hand {
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    transform-origin: bottom;
+}
+
+.hour {
+    height: 60px;
+    width: 10px;
+    
+}
