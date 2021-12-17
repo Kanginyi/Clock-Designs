@@ -36,7 +36,6 @@ body {
     left: 0;
     right: 0;
     border-radius: 5px;
-    transform-origin: bottom;
 }
 
 .hour {
@@ -44,3 +43,16 @@ body {
     width: 10px;
     
 }
+
+.minute {
+    height: 80px;
+    width: 5px;
+
+}
+
+.second {
+    height: 90px;
+    width: 3px;
+    background-color: blueviolet;
+}
+
