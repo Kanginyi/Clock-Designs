@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -17,9 +19,9 @@ body {
 }
 
 .clock {
-    background: pink;
-    height: 300px;
-    width: 300px;
+    background: rgb(255, 220, 226);
+    height: 320px;
+    width: 320px;
     border-radius: 50%;
     border: 14px solid rgb(255, 164, 180);
     box-sizing: content-box;
@@ -27,32 +29,48 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: absolute;
 }
 
 .hand {
     background-color: white;
     position: absolute;
     margin: auto;
-    left: 0;
-    right: 0;
     border-radius: 5px;
+    transform-origin: bottom;
+    bottom: 160px;
 }
 
 .hour {
     height: 60px;
-    width: 10px;
-    
+    width: 9px;
 }
 
 .minute {
     height: 80px;
     width: 5px;
-
 }
 
 .second {
     height: 90px;
     width: 3px;
-    background-color: blueviolet;
+    background-color: rgb(255, 164, 180);
 }
 
+#middle-circle {
+    background-color: rgb(255, 164, 180);
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#Layer_1 path, #Layer_1 text {
+    fill: white;
+}
+
+#Layer_1 text {
+    font-size: 42.23796081542969px;
+    font-family: 'Work Sans', sans-serif;
+}
