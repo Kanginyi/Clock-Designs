@@ -1,8 +1,8 @@
- const hour = document.querySelector("#hour");
- const minute = document.querySelector("#minute");
- const second = document.querySelector("#second");
+ const hour = document.getElementsByClassName("hour");
+ const minute = document.getElementsByClassName("minute");
+ const second = document.getElementsByClassName("second");
 
-let set_clock = setInterval(() => {
+ let set_clock = setInterval(() => {
     const date = new Date();
 
     const dateHour = date.getHours();
@@ -13,7 +13,10 @@ let set_clock = setInterval(() => {
     let minTick = (dateMinute * 6) + (dateSecond / 10);
     let secTick = dateSecond * 6;
 
-    hour.style.transform = `rotate(${hourTick}deg)`;
-    minute.style.transform = `rotate(${minTick}deg)`;
-    second.style.transform = `rotate(${secTick}deg)`;
+    hour[0].style.transform = `rotate(${hourTick}deg)`;
+    hour[1].style.transform = `rotate(${hourTick}deg)`;
+    minute[0].style.transform = `rotate(${minTick}deg)`;
+    minute[1].style.transform = `rotate(${minTick}deg)`;
+    second[0].style.transform = `rotate(${secTick}deg)`;
+    second[1].style.transform = `rotate(${secTick}deg)`;
 }, 1000);
