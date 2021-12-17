@@ -19,11 +19,9 @@ body {
 }
 
 .clock {
-    background: rgb(255, 220, 226);
     height: 320px;
     width: 320px;
     border-radius: 50%;
-    border: 14px solid rgb(255, 164, 180);
     box-sizing: content-box;
 
     display: flex;
@@ -33,13 +31,32 @@ body {
     position: absolute;
 }
 
+#clock1 {
+    background: rgb(255, 220, 226);
+    border: 14px solid rgb(255, 164, 180);
+}
+
+#clock2 {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border: 5px solid rgba(255, 255, 255, 0.6);
+}
+
 .hand {
-    background-color: white;
     position: absolute;
     margin: auto;
     border-radius: 5px;
     transform-origin: bottom;
     bottom: 160px;
+}
+
+.hand1 {
+    background-color: white;
+}
+
+.hand2 {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
 }
 
 .hour {
@@ -55,22 +72,33 @@ body {
 .second {
     height: 90px;
     width: 3px;
+}
+
+.second1 {
     background-color: rgb(255, 164, 180);
 }
 
-#middle-circle {
-    background-color: rgb(255, 164, 180);
+.middle-circle {
     height: 13px;
     width: 13px;
     border-radius: 50%;
     position: absolute;
 }
 
-#Layer_1 path, #Layer_1 text {
-    fill: white;
+.pink-circle {
+    background-color: rgb(255, 164, 180);
 }
 
-#Layer_1 text {
+.blur-circle {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.layer {
+    fill: white;
     font-size: 42.23796081542969px;
     font-family: 'Work Sans', sans-serif;
+}
+
+#svg2 {
+    opacity: 0.6;
 }
